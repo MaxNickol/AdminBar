@@ -7,7 +7,7 @@ import {Spring} from 'react-spring/renderprops';
 export const Table = () => {
 
    const context = useContext(ListContext);
-   console.log(`CONTEXT LIST:${context.list}`);
+   
     return (
         
         <Spring

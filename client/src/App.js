@@ -74,7 +74,7 @@ function App() {
     
     const userInfo = JSON.parse(localStorage.getItem('userInfo'));
 
-    window.location.reload();
+    window.location.href = '/';
 
     if(ids.has(userInfo.userId)) { 
       logout();
@@ -88,7 +88,7 @@ function App() {
 
     const userInfo = JSON.parse(localStorage.getItem('userInfo'));
 
-    window.location.reload();
+    window.location.href = '/';
 
     if(ids.has(userInfo.userId)) { 
       logout();
@@ -100,7 +100,7 @@ function App() {
 
     await request('users/unblock', 'post', {ids:idsArr});
 
-    window.location.reload();
+    window.location.href = '/';
   }
 
   useEffect(() => { 
@@ -108,8 +108,6 @@ function App() {
     const fetchData = async () => {
         try{
             const users = await axios.get('/users');
-
-            console.log(users.data);
 
             setList(users.data);
         }

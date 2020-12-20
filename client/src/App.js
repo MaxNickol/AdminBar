@@ -74,10 +74,12 @@ function App() {
     
     const userInfo = JSON.parse(localStorage.getItem('userInfo'));
 
-    window.location.href = '/';
+    
 
     if(ids.has(userInfo.userId)) { 
       logout();
+    } else { 
+      window.location.href = '/';
     }
   }
 
@@ -88,10 +90,12 @@ function App() {
 
     const userInfo = JSON.parse(localStorage.getItem('userInfo'));
 
-    window.location.href = '/';
+    
 
     if(ids.has(userInfo.userId)) { 
       logout();
+    } else { 
+      window.location.href = '/';
     }
   }
 

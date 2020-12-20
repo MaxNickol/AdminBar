@@ -19,13 +19,13 @@ export const useRoutes = isAuthenticated => {
         return (
         <>
         <Switch>
-            <Route exact path='/login'>
+            <Route exact path='/'>
                 <Login />
             </Route>
             <Route path="/registr" >
                 <Registr />
             </Route>
-            <Redirect to='/login' />
+            <Redirect to='/' />
         </Switch>
         
         </>

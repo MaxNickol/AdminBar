@@ -114,7 +114,7 @@ app.post('/auth/login', async (req, res) => {
                 res.status(200).json({token: `Bearer ${token}`, userId: candidate.id})
             }
             else { 
-                res.status(200).json({message: 'Your are blocked!'})
+                res.status(500).json({message: 'Your are blocked!'});
             }
 
             

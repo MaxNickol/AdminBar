@@ -21,6 +21,9 @@ export const Registr = () => {
         name:'',
     })
 
+    if(window.location.reload()) { 
+        window.location.href = "/";
+    }
 
     const [sysMes, setSysmes] = useState([]);
     const [showSys, setShow] = useState(false);
